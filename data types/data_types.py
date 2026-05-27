@@ -22,6 +22,7 @@ print(x, type(x))
 print('###########################---Sequence Data Types---#############################')
 # A sequence is an ordered collection of items, which can be of similar or different data types. Elements in a sequence can be accessed using indexing.
 # (01) String, represented by str in python String in dart and typescript.
+
 note = "My Name is Mohsin Hussain"
 note2 = 'I am learning python'
 note3 = ''''When we write String in three single
@@ -34,3 +35,20 @@ print("String type is: ", type(note))
 # We can also get an specific character using it's index as string in python is sequence data type.
 print(note[11])
 print(note[-14])
+
+# (02) List Here comes the most useful and common data Type
+# List basics are same as dart
+# - A list can store multiple data types
+# - It's children can be accessed through indexing
+# Let us see how can we use it's constructor to create a list
+
+pythonListOne = list((1,2,3, 'Mohsin', 8.9, 2+3j))
+print(pythonListOne)
+print(type(pythonListOne))
+
+# If we want same multiple values of a list than
+list1 = ['mohsin'] * 10
+list2 = [2] * 3
+
+print("LIST 1: ",list1)
+print("LIST 2: ",list2)
