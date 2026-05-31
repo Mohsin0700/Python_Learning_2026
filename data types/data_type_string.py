@@ -41,3 +41,12 @@ n = name3.count('o')
 #.find() methods finds the nearest, very first and lowest index.
 # myNameIndex = note.find('Mohsin')
 # print(myNameIndex)
+
+
+# .expandTabs() method in python.
+# while working on python often we need to print a table.By default it expends by 8 characters.
+# we use \t for tab.
+
+table1 = "Name\tAge\tlocation\tCNIC"
+print("Table 1 without expendTab",table1)
+print("Table 1 with expendTab",table1.expandtabs())
