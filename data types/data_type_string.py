@@ -50,3 +50,21 @@ n = name3.count('o')
 table1 = "Name\tAge\tlocation\tCNIC"
 print("Table 1 without expendTab",table1)
 print("Table 1 with expendTab",table1.expandtabs())
+# .encode() METHOD IN PYTHON. IT'S VERY IMPORTANT METHOD FOR DATA ENCRYPTION AND SECURITY PURPOSES.
+# we can also give it a paramter for encoding formats like Examples "ascii", "latin-1", "utf-16", etc.
+
+txt = "Hello World! My name is Hafiz Mohsin and I've started learning python..."
+# encodedTxt = txt.encode()
+# encodedTxt = txt.encode("ascii")
+# encodedTxt = txt.encode("latin-1")
+encodedTxt = txt.encode("utf-16")
+print("By default it encodes text in UTF-8 format. note it is encoded in bytes and there will be a b which was not in string above.",encodedTxt)
+print("String after decode::::::::::",encodedTxt.decode("utf-16"))
+
+print("*" * 100)
+# Now we will see .formate() method which is used for string formatting/ interpolation.
+name = "Hafiz Mohsin"
+age = 28
+location = "Karachi"
+
+print("My good name is {} and I'm {} years old. I live in {}, Pakistan".format(name, age, location))
