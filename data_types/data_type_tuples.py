@@ -26,3 +26,10 @@ print(tupp[::-1]) # for printing a complete tuple in reverse.
 
 subTup = tupp[1:4] # It's called slicing means copying / creating sub-tuple from original one.
 print(subTup) #for specific range starting from second index and less than index 4 // bcd
+
+# *operator is used in tuple unpacking to grab multiple items into a list. This is useful to extract just a few specific elements and collect the rest together.
+tup = (1, 2, 3, 4, 5)
+a, *b, c = tup
+print(a) 
+print(b) 
+print(c)
